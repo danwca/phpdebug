@@ -1,0 +1,15 @@
+{
+    "name": "danwca/phpdebug",
+    "description": "simplest php debug solution",
+    "type": "library",
+    "license": "MIT",
+    "autoload": {
+        "psr-4": {
+            "MyPackage\\": "src/"
+        },
+		 "files": ["debug.php"]
+    },
+    "require": {
+        "php": "^7.4"
+    }
+}
