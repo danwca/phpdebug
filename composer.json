@@ -10,6 +10,5 @@
 		 "files": ["debug.php"]
     },
     "require": {
-        "php": "^7.4"
     }
 }
