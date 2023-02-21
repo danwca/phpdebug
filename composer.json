@@ -7,7 +7,7 @@
         "psr-4": {
             "MyPackage\\": "src/"
         },
-		 "files": ["debug.php"]
+		 "files": ["src/debug.php"]
     },
     "require": {
     }
