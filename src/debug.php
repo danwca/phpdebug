@@ -4,7 +4,11 @@ function debug_print($info="ok now!",$counter=0,$html=false)
 {
 	static $c=0;
 	$info_=debug_backtrace ();
-	echo "<br>FILE : ".basename($info_[0]['file']).", FUNCTION : ".$info_[1]['function'].", LINE :".$info_[0]['line']."\n <br><hr>";
+	if(!isset($info_[1]))
+		$func = "(unknow)"
+	else
+		$func = $info_[1]['function'];
+	echo "<br>FILE : ".basename($info_[0]['file']).", FUNCTION : ".$func.", LINE :".$info_[0]['line']."\n <br><hr>";
 	if(is_array($info) || is_object($info))
 		$info=print_r($info,true);
 	else if(is_bool($info))
