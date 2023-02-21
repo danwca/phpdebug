@@ -5,7 +5,7 @@ function debug_print($info="ok now!",$counter=0,$html=false)
 	static $c=0;
 	$info_=debug_backtrace ();
 	if(!isset($info_[1]))
-		$func = "(unknow)";
+		$func = "(unknown)";
 	else
 		$func = $info_[1]['function'];
 	echo "<br>FILE : ".basename($info_[0]['file']).", FUNCTION : ".$func.", LINE :".$info_[0]['line']."\n <br><hr>";
